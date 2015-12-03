@@ -28,6 +28,9 @@ there is a template, poke will use it.
 
 	poke FileName.ext
 
+Flags can be used to edit templates, or specify which template to use regardless
+of file extension. Available flags include:
+
 | Flag     | Description  |
 | -------- | ------------ |
 | -h\|--help    | The full filename with extension |
@@ -38,7 +41,6 @@ there is a template, poke will use it.
 | -cs\|--c#     | Creates file with C# template    |
 | -f\|--f#      | Creates file with F# template    |
 | -g\|--go      | Creates file with Go template    |
-
 
 Currently the following langauges have templates:
 
@@ -70,3 +72,5 @@ have access to a few variables:
 
 See [poke.java](https://github.com/GleasonK/poke/blob/master/tmpl/poke.java)
 for a good example of template creation.
+
+Let me know if you have any suggestions for the future of this script!

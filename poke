@@ -5,11 +5,27 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 usage() {
 	cat <<EOF
 Usage: poke [-filetype|--lang] filename"
+	--help 	   See all commands
 	-j|--java  Java file
 	-c         C file
 	-cpp|--c++ C++ file
 EOF
 	exit $1
+}
+
+help() {
+	cat <<EOF
+Usage: poke [-opts|--lang] filename
+	-h|--help 	See all commands
+	--edit [lang]	Edit template for specified language (Eg: poke -edit java) 
+	-j|--java 	Java file
+	-c         	C file
+	-cpp|--c++ 	C++ file
+	-cs|--cs   	C# file
+	-f|--fs    	F# file	
+	-g|--go    	Go file	
+EOF
+	exit 1
 }
 
 cmd_exists(){
@@ -39,7 +55,6 @@ fi
 
 ext=""
 if [[ "$1" == -* ]]; then
-	echo "HERE"
 	case "$1" in
 		-j|--java)
 			ext="java"
@@ -55,6 +70,12 @@ if [[ "$1" == -* ]]; then
 			;;
 		-g|--go)
 			ext="go"
+			;;
+		-cs|--[Cc]#)
+			ext="cs"
+			;;
+		-h|--help)
+			help 1 
 			;;
 		--edit)
 			edit_tmpl "$2"
