@@ -108,8 +108,9 @@ echo $fout
 # Check if file + ext exists
 tmpl="$DIR/tmpl/poke.$ext"
 if [ -f $tmpl ]; then
-	time=`date +"%m\/%d\/%Y"`
-	REGEX="s/\$FNAME/$fname/;s/\$FILE/$fout/;s/\$TIME/$time/"
+	date=`date +"%m\/%d\/%Y"`
+	dir=${PWD##*/}
+	REGEX="s/\$FNAME/$fname/;s/\$FILE/$fout/;s/\$DATE/$date/;s/\$DIR/$dir/"
 	sed $REGEX $tmpl > $fout
 else
 	echo "Language not recognized!"

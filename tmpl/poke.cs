@@ -1,13 +1,21 @@
 /*
  * File: $FILE
  * Author: {your-name}
+ * Date: $DATE
  */
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class $FNAME
+namespace $DIR
 {
-	public static void Main()
+	class $FNAME
 	{
-		// Main
+		static void Main(string[] args)
+		{
+			// Main
+		}
 	}
 }

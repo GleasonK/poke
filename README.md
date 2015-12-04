@@ -68,7 +68,8 @@ have access to a few variables:
 | --------- | ------------- |
 | $FILE     | The full filename with extension |
 | $FNAME    | The filename without extension   |
-| $TIME     | Time that the file was created   |
+| $DATE     | Date that the file was created   |
+| $DIR      | The files current directory      |
 
 See [poke.java](https://github.com/GleasonK/poke/blob/master/tmpl/poke.java)
 for a good example of template creation.

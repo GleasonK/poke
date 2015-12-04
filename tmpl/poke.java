@@ -1,7 +1,7 @@
 /**
  * File: $FILE
  * @author {your-name}
- * Date: $TIME
+ * Date: $DATE
  */
 public class $FNAME {
 
