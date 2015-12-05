@@ -16,7 +16,7 @@ command:
 	cd poke/
 	./poke Test.java
 
-Now, to use poke you have to do is add the poke folder to your `PATH` variable.
+To use poke, you have to do add the poke folder to your `PATH` variable.
 It is important that `poke` and `tmpl/` remain in the same folder.
 
 ## Usage
