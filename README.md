@@ -9,15 +9,19 @@ to create a template for the programming language of your file.
 
 ## Using poke
 
+To install poke, clone the repository and install with the `Makefile`, using
+`make install`.
+	
+	git clone https://github.com/GleasonK/poke.git
+	cd poke/
+	make install
+
 If you just want to see poke in action, clone the repository and call the poke
 command:
 
 	git clone https://github.com/GleasonK/poke.git
 	cd poke/
 	./poke Test.java
-
-Now, to use poke you have to do is add the poke folder to your `PATH` variable.
-It is important that `poke` and `tmpl/` remain in the same folder.
 
 ## Usage
 

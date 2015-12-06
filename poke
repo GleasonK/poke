@@ -1,6 +1,11 @@
 #!/bin/sh
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+if [ -d "$HOME/.poke" ]; then
+	DIR="$HOME/.poke"
+fi
+
+echo $DIR
 
 usage() {
 	cat <<EOF
