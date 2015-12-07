@@ -1,6 +1,6 @@
 /* File: $FILE
  * Date: $DATE
- * Author: {your-name}
+ * Author: $AUTHOR
  */
 
 #include <stdio.h>
