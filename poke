@@ -157,7 +157,6 @@ if [ -f $tmpl ]; then
 	dir=${PWD##*/}
 	REGEX="s/\$FNAME/$fname/;s/\$FILE/$fout/;s/\$DATE/$date/;s/\$DIR/$dir/;"
 	REGEX=$REGEX`load_globals` # Add global config vars
-	echo $REGEX
 	sed "$REGEX" $tmpl > $fout
 else
 	echo "Language not recognized!"
