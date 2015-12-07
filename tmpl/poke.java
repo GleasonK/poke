@@ -1,6 +1,6 @@
 /**
  * File: $FILE
- * @author {your-name}
+ * @author $AUTHOR
  * Date: $DATE
  */
 public class $FNAME {

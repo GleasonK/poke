@@ -1,5 +1,5 @@
 (* File: $FILE
- * Author: {your-name}
+ * Author: $AUTHOR
  *)
 
 namespace NAMESPACE

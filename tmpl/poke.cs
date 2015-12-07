@@ -1,6 +1,6 @@
 /*
  * File: $FILE
- * Author: {your-name}
+ * Author: $AUTHOR
  * Date: $DATE
  */
 using System;
