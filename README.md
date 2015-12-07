@@ -39,12 +39,22 @@ of file extension. Available flags include:
 | -------- | ------------ |
 | -h\|--help    | The full filename with extension |
 | --edit [lang] | The filename without extension   |
+| --global [key] [val] | Save a global poke value (more below)   |
 | -j\|--java    | Creates file with Java template  |
 | -c            | Creates file with C template     |
 | -cpp\|--c++   | Creates file with C++ template   |
 | -cs\|--c#     | Creates file with C# template    |
 | -f\|--f#      | Creates file with F# template    |
 | -g\|--go      | Creates file with Go template    |
+
+## Configuring Globals
+
+	poke --global AUTHOR "Your Name"
+
+Saves the author to a global config file. Now all $AUTHOR template variables
+will be filled in with AUTHOR value.
+
+## Templates
 
 Currently the following langauges have templates:
 
